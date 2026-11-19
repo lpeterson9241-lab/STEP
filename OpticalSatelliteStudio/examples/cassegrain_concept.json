@@ -1,0 +1,174 @@
+{
+  "name": "Cassegrain concept \u2014 illustrative",
+  "units": "mm",
+  "schema_version": 1,
+  "components": [
+    {
+      "id": "e14766797aed",
+      "name": "Primary mirror",
+      "kind": "mirror",
+      "enabled": true,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "params": {
+        "diameter": 200,
+        "radius": -650,
+        "conic": -1.0,
+        "hole_diameter": 40
+      },
+      "material": "Glass",
+      "coating": "Aluminum reflective",
+      "cad_file": "",
+      "parent_id": null,
+      "surface_properties": {},
+      "metadata": {}
+    },
+    {
+      "id": "31ed91e58718",
+      "name": "Secondary mirror",
+      "kind": "mirror",
+      "enabled": true,
+      "position": [
+        0.0,
+        0.0,
+        260.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "params": {
+        "diameter": 68,
+        "radius": 210,
+        "conic": -2.0,
+        "hole_diameter": 0
+      },
+      "material": "Glass",
+      "coating": "Aluminum reflective",
+      "cad_file": "",
+      "parent_id": null,
+      "surface_properties": {},
+      "metadata": {}
+    },
+    {
+      "id": "16b3de6fcf29",
+      "name": "Central baffle",
+      "kind": "baffle",
+      "enabled": true,
+      "position": [
+        0.0,
+        0.0,
+        42.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "params": {
+        "outer_diameter": 48,
+        "inner_diameter": 42,
+        "length": 180
+      },
+      "material": "Aluminum",
+      "coating": "Black absorbing (placeholder)",
+      "cad_file": "",
+      "parent_id": null,
+      "surface_properties": {},
+      "metadata": {}
+    },
+    {
+      "id": "950acdc89bea",
+      "name": "Outer telescope tube",
+      "kind": "housing",
+      "enabled": true,
+      "position": [
+        0.0,
+        0.0,
+        190.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "params": {
+        "outer_diameter": 224,
+        "inner_diameter": 216,
+        "length": 390
+      },
+      "material": "Aluminum",
+      "coating": "Black absorbing (placeholder)",
+      "cad_file": "",
+      "parent_id": null,
+      "surface_properties": {},
+      "metadata": {}
+    },
+    {
+      "id": "aa6059a12580",
+      "name": "Image-plane placeholder",
+      "kind": "detector",
+      "enabled": true,
+      "position": [
+        0.0,
+        0.0,
+        -110.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "params": {
+        "diameter": 22
+      },
+      "material": "Silicon",
+      "coating": "Unspecified",
+      "cad_file": "",
+      "parent_id": null,
+      "surface_properties": {},
+      "metadata": {}
+    },
+    {
+      "id": "56a97b3e8f69",
+      "name": "Entrance aperture",
+      "kind": "aperture",
+      "enabled": true,
+      "position": [
+        0.0,
+        0.0,
+        390.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "params": {
+        "diameter": 200
+      },
+      "material": "Unspecified",
+      "coating": "Unspecified",
+      "cad_file": "",
+      "parent_id": null,
+      "surface_properties": {},
+      "metadata": {}
+    }
+  ],
+  "links": [],
+  "constraints": [],
+  "material_library": {},
+  "metadata": {
+    "purpose": "optomechanical authoring; no optical performance verified",
+    "warning": "Conceptual geometry only; focal plane and conic prescription not optimized."
+  }
+}

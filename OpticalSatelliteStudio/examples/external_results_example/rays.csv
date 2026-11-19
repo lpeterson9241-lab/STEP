@@ -1,0 +1,9 @@
+ray_id,sequence,x_mm,y_mm,z_mm
+demo_ray_a,0,-60,-6,410
+demo_ray_a,1,-50,-6,260
+demo_ray_a,2,-20,-4,0
+demo_ray_a,3,0,0,-110
+demo_ray_b,0,60,6,410
+demo_ray_b,1,50,6,260
+demo_ray_b,2,20,4,0
+demo_ray_b,3,0,0,-110

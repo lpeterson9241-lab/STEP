@@ -1,0 +1,346 @@
+{
+  "name": "OPIR infrared payload \u2014 conceptual",
+  "units": "mm",
+  "schema_version": 1,
+  "components": [
+    {
+      "id": "6a328891b827",
+      "name": "Spacecraft bus",
+      "kind": "assembly",
+      "enabled": true,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "params": {},
+      "material": "Unspecified",
+      "coating": "Unspecified",
+      "cad_file": "",
+      "parent_id": null,
+      "surface_properties": {},
+      "metadata": {}
+    },
+    {
+      "id": "435c725b034e",
+      "name": "Infrared optical payload",
+      "kind": "assembly",
+      "enabled": true,
+      "position": [
+        0.0,
+        0.0,
+        450.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "params": {},
+      "material": "Unspecified",
+      "coating": "Unspecified",
+      "cad_file": "",
+      "parent_id": "6a328891b827",
+      "surface_properties": {},
+      "metadata": {}
+    },
+    {
+      "id": "b3762b2cc30e",
+      "name": "Optical bench",
+      "kind": "assembly",
+      "enabled": true,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "params": {},
+      "material": "Unspecified",
+      "coating": "Unspecified",
+      "cad_file": "",
+      "parent_id": "435c725b034e",
+      "surface_properties": {},
+      "metadata": {}
+    },
+    {
+      "id": "9e094d545a8a",
+      "name": "Primary IR mirror",
+      "kind": "mirror",
+      "enabled": true,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "params": {
+        "diameter": 300,
+        "radius": -1000,
+        "conic": -1,
+        "hole_diameter": 60
+      },
+      "material": "Glass",
+      "coating": "Aluminum reflective",
+      "cad_file": "",
+      "parent_id": "b3762b2cc30e",
+      "surface_properties": {},
+      "metadata": {}
+    },
+    {
+      "id": "59b86ee85c99",
+      "name": "Secondary IR mirror",
+      "kind": "mirror",
+      "enabled": true,
+      "position": [
+        0.0,
+        0.0,
+        390.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "params": {
+        "diameter": 95,
+        "radius": 310,
+        "conic": -2,
+        "hole_diameter": 0
+      },
+      "material": "Glass",
+      "coating": "Aluminum reflective",
+      "cad_file": "",
+      "parent_id": "b3762b2cc30e",
+      "surface_properties": {},
+      "metadata": {}
+    },
+    {
+      "id": "19fc6a80ea37",
+      "name": "Optical enclosure",
+      "kind": "housing",
+      "enabled": true,
+      "position": [
+        0.0,
+        0.0,
+        270.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "params": {
+        "outer_diameter": 332,
+        "inner_diameter": 320,
+        "length": 550
+      },
+      "material": "Aluminum 6061 (placeholder)",
+      "coating": "Low reflectance IR coating (data required)",
+      "cad_file": "",
+      "parent_id": "b3762b2cc30e",
+      "surface_properties": {},
+      "metadata": {}
+    },
+    {
+      "id": "e3ca95b1d430",
+      "name": "Primary baffle",
+      "kind": "baffle",
+      "enabled": true,
+      "position": [
+        0.0,
+        0.0,
+        95.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "params": {
+        "outer_diameter": 70,
+        "inner_diameter": 63,
+        "length": 215
+      },
+      "material": "Aluminum",
+      "coating": "Black absorbing (placeholder)",
+      "cad_file": "",
+      "parent_id": "b3762b2cc30e",
+      "surface_properties": {},
+      "metadata": {}
+    },
+    {
+      "id": "518c0e425278",
+      "name": "Cold shield",
+      "kind": "housing",
+      "enabled": true,
+      "position": [
+        0.0,
+        0.0,
+        -130.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "params": {
+        "outer_diameter": 52,
+        "inner_diameter": 42,
+        "length": 90
+      },
+      "material": "Aluminum",
+      "coating": "Cold shield IR black (BRDF required)",
+      "cad_file": "",
+      "parent_id": "b3762b2cc30e",
+      "surface_properties": {},
+      "metadata": {}
+    },
+    {
+      "id": "59031bf75d86",
+      "name": "Infrared focal plane",
+      "kind": "detector",
+      "enabled": true,
+      "position": [
+        0.0,
+        0.0,
+        -175.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "params": {
+        "diameter": 27.3,
+        "thickness": 2,
+        "pixel_pitch_um": 15.0,
+        "pixels_x": 1280,
+        "pixels_y": 1024
+      },
+      "material": "Silicon",
+      "coating": "Unspecified",
+      "cad_file": "",
+      "parent_id": "b3762b2cc30e",
+      "surface_properties": {},
+      "metadata": {
+        "temperature_K": 80.0,
+        "spectral_band_um": [
+          3.0,
+          5.0
+        ],
+        "detector_response": "user_data_required"
+      }
+    },
+    {
+      "id": "0ee510c3cf31",
+      "name": "Entrance aperture",
+      "kind": "aperture",
+      "enabled": true,
+      "position": [
+        0.0,
+        0.0,
+        550.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "params": {
+        "diameter": 300
+      },
+      "material": "Unspecified",
+      "coating": "Unspecified",
+      "cad_file": "",
+      "parent_id": "b3762b2cc30e",
+      "surface_properties": {},
+      "metadata": {}
+    },
+    {
+      "id": "d77a4a1a62c1",
+      "name": "Spacecraft bus envelope",
+      "kind": "housing",
+      "enabled": true,
+      "position": [
+        0.0,
+        0.0,
+        -250.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "params": {
+        "outer_diameter": 550,
+        "inner_diameter": 535,
+        "length": 420
+      },
+      "material": "Aluminum",
+      "coating": "Black absorbing (placeholder)",
+      "cad_file": "",
+      "parent_id": "6a328891b827",
+      "surface_properties": {},
+      "metadata": {}
+    }
+  ],
+  "links": [
+    {
+      "source_id": "9e094d545a8a",
+      "source_param": "diameter",
+      "target_id": "19fc6a80ea37",
+      "target_param": "inner_diameter",
+      "scale": 1,
+      "offset": 20
+    },
+    {
+      "source_id": "9e094d545a8a",
+      "source_param": "diameter",
+      "target_id": "19fc6a80ea37",
+      "target_param": "outer_diameter",
+      "scale": 1,
+      "offset": 32
+    },
+    {
+      "source_id": "9e094d545a8a",
+      "source_param": "diameter",
+      "target_id": "0ee510c3cf31",
+      "target_param": "diameter",
+      "scale": 1,
+      "offset": 0
+    }
+  ],
+  "constraints": [
+    {
+      "type": "axial_gap",
+      "source_id": "9e094d545a8a",
+      "target_id": "59b86ee85c99",
+      "gap_mm": 390
+    },
+    {
+      "type": "axial_gap",
+      "source_id": "518c0e425278",
+      "target_id": "59031bf75d86",
+      "gap_mm": -45
+    }
+  ],
+  "material_library": {},
+  "metadata": {
+    "purpose": "optomechanical authoring; no optical performance verified",
+    "note": "Illustrative geometry: focal lengths, spectral response, thermal background and coatings need engineering verification."
+  }
+}
